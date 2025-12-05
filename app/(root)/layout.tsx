@@ -1,3 +1,6 @@
+import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
@@ -16,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex h-screen flex-col">
+        <Header/>
         <main className="flex-1 wrapper">
             {children}
         </main>
