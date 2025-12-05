@@ -1,5 +1,5 @@
 import Header from "@/components/shared/header";
-import Footer from "@/components/shared/footer";
+import Footer from "@/components/footer";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,6 +23,7 @@ export default function RootLayout({
         <main className="flex-1 wrapper">
             {children}
         </main>
+        <Footer/>
     </div>
   );
 }
